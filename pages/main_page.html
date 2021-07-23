@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style/style.css" />
+  <title>Catch them all</title>
+</head>
+
+<body>
+
+  <header>
+
+    <h1 id="head">Site de capture de pokemons</h1>
+
+  </header>
+
+  <section>
+
+
+    <h2> Pokedex</h2>
+
+    <a href="pokedex"> Voire le pokedex entier</a>
+
+    <form method="GET" action="pokedex">
+      <label for="pokedex_id">Voir un pokemon précis grâce à son id</label>
+      <input type="text" id="pokedex_id" placeholder="1" name="pokedex_id" required />
+      <input type="submit" value="Envoyer !" />
+    </form>
+
+    <form method="POST" action="pokedex">
+      <label for="pokemon_name">Ajouter un nouveau pokémon</label>
+      <input type="text" id="pokemon_name" placeholder="nom ici" name="pokemon_name" required />
+
+      <select name="pokemon_rarity" id="rarity">
+        <option value="30">Commun</option>
+        <option value="20" selected>Peu Commun</option>
+        <option value="10">Rare</option>
+        <option value="5">Tres Rare</option>
+        <option value="1">Legendaire</option>
+      </select>
+    <input type="submit" value="Envoyer !" />
+    </form>
+
+    <form method="PUT" action="pokedex">
+      <label for="pokedex_id">Modifier un pokemon précis grâce à son id</label>
+      <input type="text" id="pokedex_id" placeholder="1" name="pokedex_id" required />
+      <input type="text" id="pokemon_name" placeholder="nom ici" name="pokemon_name" required />
+      <select name="pokemon_rarity" id="rarity">
+        <option value="30">Commun</option>
+        <option value="20" selected>Peu Commun</option>
+        <option value="10">Rare</option>
+        <option value="5">Tres Rare</option>
+        <option value="1">Legendaire</option>
+    </select> 
+      <input type="submit" value="Envoyer !" />
+    </form>
+
+
+
+
+  </section>
+
+  </br>
+
+  <footer>
+    <nav>
+      <a href="#head"> Revenir en haut</a>
+      <a href="mailto:michel.demuretdelabouret@ynov.com">Envoyez-moi un email !</a>
+    </nav>
+  </footer>
+
+</body>
+
+</html>
